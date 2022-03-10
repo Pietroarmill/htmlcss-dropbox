@@ -30,21 +30,41 @@ ul{
     margin: 0 auto;
 }
 
-.bg-light-blue{
-    background-color: #b4d0e7;
+.text{
+    font-weight: 500;
 }
 
+.title{
+    font-size: 3em;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* margin bottom */
+.mb-05em{
+    margin-bottom: .5em;
+}
+.bm-1em{
+    margin-bottom: 1em;
+}
+.mb-2em{
+    margin-bottom: 2em;
+}
+.mb-3em{
+    margin-bottom: 3em;
+}
+
+
+/* button */
 .btn{
     color: white;
     padding: .4em 1.2em;
 }
 
 .btn-blue{
-background-color: blue;
-}
-
-.btn-large{
-
+    background-color: blue;
 }
 
 
@@ -84,24 +104,79 @@ nav li a{
 
 /* MAIN */
 /* banner Dropbox*/
-.banner-dropbox{
-    height: 700px;
+.bg-banner{
+    background-color: #b4d0e7;
+    height: 800px;
+    margin-bottom: 12em;
 }
 
 .title-banner{
-    height: 200px;
-    background-color: aquamarine;
+    padding: 3em 0;
 }
 
-.content-banner{
-    height: 400px;
-    background-color: pink;
+.title-banner h1{
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.content-banner .banner-text{
+    width: 30%;
+    float: left;
+}
+
+.banner-text .btn-blue{
+    text-decoration: none;
+    text-align: center;
+}
+
+.banner-text div:first-of-type{
+    margin: 2em 0 1em 0;
+}
+
+.cancel-free-trial{
+    text-decoration: none;
+    color: black;
+    font-size: .9em;
+}
+
+.banner-text .arrow{
+    margin-top: 1em;
+    font-size: 3em;
+}
+
+.banner-text .arrow a{
+    color: black;
+
+}
+
+.content-banner .banner-img{
+    width: 70%;
+    float: left;
 }
 
 /* business Dropbox */
 .business-dropbox{
     height: 1400px;
-    background-color: coral;
+}
+
+.business-dropbox .circle{
+    vertical-align: middle;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+
+.business-dropbox .circle-gray{
+    border: 1px solid gray;
+}
+
+.business-dropbox .circle-blue{
+    border: 4px solid blue;
+}
+
+.billing{
+    margin-right: 1em;
 }
 
 .business-dropbox .business-plane .col{
@@ -126,6 +201,31 @@ nav li a{
 .business-bottom .row-bottom{
     height: 150px;
     border: 1px solid lightgray;
+}
+
+.business-plane .content-top{
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    font-size: 1.2em;
+    height: 40px;
+}
+
+.business-plane .content-bottom{
+    padding: 2em;
+}
+.business-plane .content-top span {
+    line-height: 40px;
+}
+
+.business-plane .content-bottom span {
+    display: inline-block;
+    margin: .5em 0;
+}
+
+.business-plane .content-bottom .month{
+    font-weight: bold;
+    font-size: .9em;
+    color: #637381;
 }
 
 /* partner Dropbox */
