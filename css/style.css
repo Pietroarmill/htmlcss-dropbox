@@ -7,10 +7,135 @@
 
 .clear-fix::after{
     content: "";
-    display:  table;
+    display: table;
     clear: both;
 }
 
 img{
     width: 100%;
 }
+
+html{
+    font-size: 100%;
+}
+
+/* COMMON */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bg-light-blue{
+    background-color: lightskyblue;
+}
+
+/* BODY */
+/* HEADER */
+header{
+    height: 80px;
+    background-color: bisque;
+}
+
+.header-col{
+    width: 50%;
+    float: left;
+}
+
+.header-col-left{
+}
+
+.header-col-right span{
+    float: right;
+}
+
+/* MAIN */
+/* banner Dropbox*/
+.banner-dropbox{
+    height: 700px;
+}
+
+.title-banner{
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.content-banner{
+    height: 400px;
+    background-color: pink;
+}
+
+/* business Dropbox */
+.business-dropbox{
+    height: 1400px;
+    background-color: coral;
+}
+
+.business-dropbox .business-plane .col{
+    height: 1000px;
+    float: left;
+    border: 1px solid lightgray;
+    width: calc(100%/3 - 4%);
+}
+
+.business-dropbox .business-plane .col-center{
+    margin: 0 6%;
+}
+
+.business-dropbox .business-bottom{
+    margin-top: 3em;
+}
+
+.business-bottom .row-top{
+    height: 50px;
+    border: 1px solid lightgray;
+}
+.business-bottom .row-bottom{
+    height: 150px;
+    border: 1px solid lightgray;
+}
+
+/* partner Dropbox */
+.partner-dropbox{
+    height: 600px;
+    background-color: yellow;
+}
+
+.partner-dropbox .col{
+    float: left;
+    border: 1px solid lightgray;
+    height: 500px;
+}
+
+.partner-dropbox .col-left{
+    width: 60%;
+}
+
+.partner-dropbox .col-right{
+    width: 40%;
+}
+
+/* operation dropbox */
+.operation-dropbox{
+    height: 900px;
+    background-color: blueviolet;
+}
+.operation-row{
+    margin-bottom: 5em;
+}
+.operation-row .col{
+    float: left;
+    height: 400px;
+    width: calc(100%/3 - 2%);
+    border: 1px solid lightgray;
+}
+
+.operation-row .col-center{
+    margin: 0 3%;
+}
+
+
+
+
+
+
+
