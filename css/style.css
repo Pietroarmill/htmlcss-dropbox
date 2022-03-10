@@ -17,6 +17,11 @@ img{
 
 html{
     font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+} 
+
+ul{
+    list-style: none;
 }
 
 /* COMMON */
@@ -26,14 +31,39 @@ html{
 }
 
 .bg-light-blue{
-    background-color: lightskyblue;
+    background-color: #b4d0e7;
 }
+
+.btn{
+    color: white;
+    padding: .4em 1.2em;
+}
+
+.btn-blue{
+background-color: blue;
+}
+
+.btn-large{
+
+}
+
 
 /* BODY */
 /* HEADER */
 header{
     height: 80px;
-    background-color: bisque;
+}
+
+nav li{
+    margin: 0 1.5em;
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
 }
 
 .header-col{
@@ -41,12 +71,16 @@ header{
     float: left;
 }
 
-.header-col-left{
+.header-col-left img{
+    width: 120px;
+    vertical-align: middle;
 }
 
-.header-col-right span{
+.header-col-right ul li{
     float: right;
 }
+
+
 
 /* MAIN */
 /* banner Dropbox*/
