@@ -133,6 +133,37 @@ header{
     margin: 0 3%;
 }
 
+/* section banners team */
+.banners-team{
+    background-color: bisque;
+    height: 700px;
+}
+
+.banners-team .col{
+    float: left;
+    height: 400px;
+}
+
+.banners-team .col-sides{
+    width: 30%;
+    background-color: pink;
+}
+
+.banners-team .col-center{
+    width: 40%;
+    background-color: lightsalmon;
+}
+
+.row-team{
+    height: 50%;
+}
+
+.row-team .col{
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
+}
+
 
 
 
