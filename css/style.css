@@ -26,6 +26,11 @@ ul{
 
 /* COMMON */
 .container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container-2{
     width: 80%;
     margin: 0 auto;
 }
@@ -46,7 +51,7 @@ ul{
 .mb-05em{
     margin-bottom: .5em;
 }
-.bm-1em{
+.mb-1em{
     margin-bottom: 1em;
 }
 .mb-2em{
@@ -106,8 +111,12 @@ nav li a{
 /* banner Dropbox*/
 .bg-banner{
     background-color: #b4d0e7;
-    height: 800px;
     margin-bottom: 12em;
+}
+
+.banner-dropbox{
+    position: relative;
+    bottom: -140px;
 }
 
 .title-banner{
@@ -217,9 +226,12 @@ nav li a{
     line-height: 40px;
 }
 
-.business-plane .content-bottom span {
-    display: inline-block;
-    margin: .5em 0;
+.business-plane .content-bottom div{
+    margin: 3em 0 2em 0;
+}
+
+.business-plane .highlights li{
+    margin-top: 1.2em;
 }
 
 .business-plane .content-bottom .month{
