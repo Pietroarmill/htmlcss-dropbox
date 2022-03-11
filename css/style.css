@@ -35,16 +35,26 @@ ul{
     margin: 0 auto;
 }
 
+.confg-a{
+    text-decoration: none;
+    color: white;
+}
 .text{
     font-weight: 500;
 }
 
 .title{
     font-size: 3em;
+    margin-bottom: 1.5em;
 }
 
 .bold{
     font-weight: bold;
+}
+
+/* color */
+.blue{
+    color: blue;
 }
 
 /* margin bottom */
@@ -64,12 +74,18 @@ ul{
 
 /* button */
 .btn{
-    color: white;
     padding: .4em 1.2em;
+    text-decoration: none;
 }
 
 .btn-blue{
+    color: white;
     background-color: blue;
+}
+
+.btn-white{
+    color: black;
+    border: 1px solid black;
 }
 
 
@@ -116,7 +132,7 @@ nav li a{
 
 .banner-dropbox{
     position: relative;
-    bottom: -140px;
+    bottom: -90px;
 }
 
 .title-banner{
@@ -188,8 +204,9 @@ nav li a{
     margin-right: 1em;
 }
 
+/* business plane */
 .business-dropbox .business-plane .col{
-    height: 1000px;
+    min-height: 1000px;
     float: left;
     border: 1px solid lightgray;
     width: calc(100%/3 - 4%);
@@ -203,14 +220,6 @@ nav li a{
     margin-top: 3em;
 }
 
-.business-bottom .row-top{
-    height: 50px;
-    border: 1px solid lightgray;
-}
-.business-bottom .row-bottom{
-    height: 150px;
-    border: 1px solid lightgray;
-}
 
 .business-plane .content-top{
     border-bottom: 1px solid lightgray;
@@ -219,19 +228,38 @@ nav li a{
     height: 40px;
 }
 
-.business-plane .content-bottom{
-    padding: 2em;
-}
 .business-plane .content-top span {
     line-height: 40px;
 }
 
+.business-plane .content-bottom{
+    padding: 2em;
+}
+
 .business-plane .content-bottom div{
     margin: 3em 0 2em 0;
+    text-align: center;
+}
+
+.business-plane .content-bottom h4{
+    margin-top: 5em;
 }
 
 .business-plane .highlights li{
-    margin-top: 1.2em;
+    margin-top: 1.5em;
+    font-size: .9em;
+}
+
+.business-plane .highlights li span{
+    color: blue;
+}
+
+/* business plane content bottom */
+.business-bottom .row-top{
+    border: 1px solid lightgray;
+}
+.business-bottom .row-bottom{
+    border: 1px solid lightgray;
 }
 
 .business-plane .content-bottom .month{
@@ -240,16 +268,40 @@ nav li a{
     color: #637381;
 }
 
+.row-bottom{
+    padding: 2em;
+}
+.business-bottom .row-top{
+    line-height: 50px;
+    text-align: center;
+}
+
+.business-bottom .row-bottom .col-left{
+    float: left;
+    width: 75%;
+}
+
+.business-bottom .row-bottom .col-left *{
+    margin-bottom: 1em;
+}
+
+.business-bottom .row-bottom .col-right{
+    float: left;
+    width: 25%;
+}
+
+.business-bottom .row-bottom .col-right div{
+    text-align: center;
+}
+
+
 /* partner Dropbox */
 .partner-dropbox{
-    height: 600px;
-    background-color: yellow;
+    margin-top: 15em;
 }
 
 .partner-dropbox .col{
     float: left;
-    border: 1px solid lightgray;
-    height: 500px;
 }
 
 .partner-dropbox .col-left{
@@ -258,37 +310,54 @@ nav li a{
 
 .partner-dropbox .col-right{
     width: 40%;
+    padding: 2em 0 0 3em;
+}
+
+.partner-dropbox .col-right *{
+    margin-bottom: 2em;
 }
 
 /* operation dropbox */
 .operation-dropbox{
-    height: 900px;
-    background-color: blueviolet;
+    margin-top: 10em;
 }
 .operation-row{
     margin-bottom: 5em;
 }
 .operation-row .col{
     float: left;
-    height: 400px;
-    width: calc(100%/3 - 2%);
-    border: 1px solid lightgray;
+    width: calc(100%/3 - 4%);
+}
+
+.operation-row .col *{
+    padding-bottom: 1em;
+}
+
+.operation-dropbox .col h3{
+    font-size: 1.6em;
 }
 
 .operation-row .col-center{
-    margin: 0 3%;
+    margin: 0 6%;
+}
+
+
+/* plus 500k */
+.plus-500k h2 {
+margin-bottom: 1.5em;
 }
 
 /* section banners team */
 .banners-team{
-    background-color: bisque;
+    margin-top: 3em;
     height: 700px;
 }
 
 .banners-team .col{
     float: left;
-    height: 400px;
+    height: 30vw;
 }
+
 
 .banners-team .col-sides{
     width: 30%;
