@@ -61,15 +61,11 @@ ul{
     display: inline-block;
 }
 
-.with-overlay::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .7);
+.display-ib{
+    display: inline-block;
 }
+
+
 /* color */
 .blue{
     color: blue;
@@ -91,20 +87,21 @@ ul{
 
 
 /* button */
+.bg-blue{
+    background-color: #0061ff;
+}
 .btn{
-    padding: .4em 1.2em;
     text-decoration: none;
 }
 
-nav .btn-small{
+.btn-small{
     padding: .4em 1.5em;
 }
 
 .btn-blue{
     color: white;
-    background-color: blue;
+    background-color: #0061ff;
     padding: .6em 1.5em;
-
 }
 
 .btn-white{
@@ -113,6 +110,11 @@ nav .btn-small{
     display: inline-block;
 }
 
+.btn-blue-width-100{
+    display: inline-block;
+    padding: .5em 14%;
+    color: white;
+}
 
 /* BODY */
 /* HEADER */
@@ -124,6 +126,7 @@ nav li{
     margin: 0 1.5em;
     display: inline-block;
     line-height: 80px;
+    border-bottom: 4px solid #b4d0e7;
 }
 
 nav li a{
@@ -203,11 +206,8 @@ nav li a{
 }
 
 /* business Dropbox */
-.business-dropbox{
-    height: 1400px;
-}
 
-.business-dropbox h2{
+.business-dropbox .title{
     margin-top: 5em;
 }
 
@@ -232,6 +232,10 @@ nav li a{
 }
 
 /* business plane */
+.btn-100{
+    width: 100%;
+}
+
 .business-dropbox .business-plane .col{
     min-height: 1000px;
     float: left;
@@ -246,7 +250,6 @@ nav li a{
 .business-dropbox .business-bottom{
     margin-top: 3em;
 }
-
 
 .business-plane .content-top{
     border-bottom: 1px solid lightgray;
@@ -270,6 +273,20 @@ nav li a{
 
 .business-plane .content-bottom h4{
     margin-top: 2em;
+}
+
+.business-plane .content-bottom .functions{
+    display: inline-block;
+    width: 92%;
+    vertical-align: top;
+}
+
+.business-plane .content-bottom .month{
+    margin-bottom: 4em;
+}
+
+.business-plane .content-bottom li{
+    margin-top: 1em;
 }
 
 .business-plane .highlights li{
@@ -324,9 +341,8 @@ nav li a{
 
 /* partner Dropbox */
 .partner-dropbox{
-    margin-top: 15em;
+    margin-top: 10em;
 }
-
 .partner-dropbox .col{
     float: left;
 }
@@ -346,7 +362,7 @@ nav li a{
 
 /* operation dropbox */
 .operation-dropbox{
-    margin-top: 10em;
+    margin-top: 7em;
 }
 .operation-row{
     margin-bottom: 5em;
@@ -473,10 +489,13 @@ margin-bottom: 1.5em;
 }
 
 .dropbox-door .col-right{
-    position: relative;
     width: 40%;
     text-align: center;
     float: left;
+}
+
+.dropbox-door .col-right div{
+    position: relative;
 }
 
 .dropbox-door .col-left{
@@ -577,14 +596,34 @@ footer .content-bottom span{
     display: block;
 }
 
+.banner-text .cancel-free-trial:hover,
 footer .content-top .col a:hover{
     text-decoration: underline;
 }
 
+.dropbox-door .col-right a:hover{
+background-color: #eef6ff;
+}
 
+.business-bottom .col-right .bg-blue:hover,
+.business-plane .content-bottom .bg-blue:hover,
+.header-col-right .btn-blue:hover,
+.banner-text .btn-blue:hover{
+    background-color: #0011ff;
+}
 
+nav li:hover{
+    border-bottom: 3px solid #0061ff;
+}
 
+.partner-dropbox .btn-small:hover{
+    background-color: #f1f1f1;
+}
 
+.banners-team .row-team div:hover{
+    border: 20px solid rgb(255, 255, 255, .6);
+
+}
 
 
 
