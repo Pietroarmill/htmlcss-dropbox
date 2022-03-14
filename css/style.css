@@ -119,14 +119,20 @@ ul{
 /* BODY */
 /* HEADER */
 header{
+    z-index: 100;
+    width: 100%;
+    background-color: white;
     height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-nav li{
+nav .first-menu > li{
     margin: 0 1.5em;
     display: inline-block;
     line-height: 80px;
-    border-bottom: 4px solid #b4d0e7;
+    border-bottom: 4px transparent;
 }
 
 nav li a{
@@ -145,10 +151,13 @@ nav li a{
     vertical-align: middle;
 }
 
-.header-col-right ul li{
-    float: right;
+.header-col-right{
+    position: relative;
 }
 
+.header-col-right .first-menu > li{
+    float: right;
+}
 
 
 /* MAIN */
@@ -626,8 +635,25 @@ nav li:hover{
 }
 
 
+header .sub-menu{
+    position: absolute;
+    background-color: white;
+    display: none;
 
+}
 
+header .sub-menu li{
+    line-height: 20px;
+    margin: 30px 30px;
+    border: none;
+}
 
+header #support:hover .sub-menu{
+    display: block;
+}
 
+header .sub-menu li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
